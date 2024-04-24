@@ -1,0 +1,56 @@
+// solve equation ax^2 + b + c = 0: comment line
+function quadraticEquation(a, b, c) /*here a,b,c are arguments(formal parameters) 
+to the function. a,b and c are the coefficients 
+of the quadratratic equarion
+(comment block)*/
+{
+	if ( a == 0 )
+	{
+	    if (b == 0)
+	    {
+		if ( c == 0 )
+		{
+		  //console.log("Any x value solves the equation");
+		  //alert("a=b=c=0:Any x value solves the equation");
+		  //pop out a modle dialog,hang the process until user
+		  // clicks th OK button
+	          //document.write("a=b=c=0:Any x value solves the equation");
+		  //creat a HTML element e,set e.innerHTML = "..."
+		  //then append the element to the body or any other
+		  //HTML element container (div,td,p,span)
+		
+	        }
+		else
+		{
+			alert ("a=b=0,c!=0: the equation has no solution at all");
+	     }
+}
+	else
+	{
+		document.write("The equation reduced to a linear equation,the only solution is" + (-c/b) + '<BR>');
+	}
+	}
+	else // a!=0
+       {
+          let delta = b^2-4*a*c;Math.pow(b,2) - 4*a*c
+          if (delta > 0)
+	  {
+	     document.write("x1=" + ((-b+Math.sqrt(delta)/2/a) + '<BR>'
+		"x2=" + ((-b+Math.sqrt(delta)/2/a) );
+	  }
+	  else if (delta == 0)
+	  {
+		document.write("There is only one solution.x=" + (-b/2/a) + '<BR>');
+	  }
+	  else // delta < 0
+          }   
+		document.write("There is no real solution" + '<BR>');
+	  }
+	}
+      }
+
+quadraticEquation(0,0,0);
+quadraticEquation(0,0,4);
+quadraticEquation(1,0,0);
+quadraticEquation(1,0,4);
+quadraticEquation(1,4,4);
